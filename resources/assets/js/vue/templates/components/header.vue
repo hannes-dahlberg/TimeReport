@@ -3,7 +3,7 @@
     <nav v-navbar-fold="{ threshold: 50 }" class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
         <div class="container">
             <router-link :to="{ name: 'page.home' }" class="navbar-brand">
-                <img width="173" class="ml-3 ml-md-0" src="/img/brand.png" :alt="$t('brand')" />
+                {{ $t('brand') }}
             </router-link>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
