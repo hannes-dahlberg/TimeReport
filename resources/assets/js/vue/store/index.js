@@ -9,6 +9,7 @@ import getters from './getters'
 
 //Import modules
 import auth from './modules/auth'
+import log from './modules/log'
 
 //Export new Vuex store
 export default new Vuex.Store({
@@ -16,6 +17,6 @@ export default new Vuex.Store({
     mutations,
     actions,
     getters,
-    modules: { auth },
+    modules: { auth, log },
     plugins: [createPersistedState()]
 })

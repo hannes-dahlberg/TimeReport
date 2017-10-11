@@ -1,5 +1,5 @@
 export default {
-    'brand': 'Laravel-Vue',
+    'brand': 'Busslogg',
     'menu': {
         'home': 'Home',
         'login': 'Login',

@@ -45,9 +45,9 @@ export default {
         addTokenToHeaders({ getters }) {
             if(!getters.getToken) { return; }
             //Setting the Echo header to include token needed when listening on private channels
-            if(Echo) {
+            /*if(Echo) {
                 Echo.connector.options.auth.headers['Authorization'] = 'Bearer ' + getters.getToken
-            }
+            }*/
 
             //Setting axios default header to include token for any future requests
             axios.defaults.headers.common['Authorization'] = 'Bearer ' + getters.getToken
